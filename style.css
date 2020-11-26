@@ -73,3 +73,15 @@ input[type=submit]:hover {
  background-color: #f2f2f2;
  padding: 20px;
 }
+
+.text{
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.wrapper{
+  margin: auto;
+  width: 1400px;
+
+}
