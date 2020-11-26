@@ -31,11 +31,21 @@
 
 .titleTop{
   width: 100%;
-  height: 20%;
+  height: 80px;
   font-family: Poppins, sans-serif;
   text-align: center;
-  font-size: 650%;
-  margin-bottom: 4%;
+  font-size: 80px;
+  margin-bottom: 5px;
+}
+
+.titleBottom{
+  width: 100%;
+  height: 20px;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  margin: 0 auto;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -72,7 +82,8 @@ input[type=submit]:hover {
  border-radius: 5px;
  background-color: #f2f2f2;
  padding: 20px;
- 
+ overflow: hidden;
+ font-family: Poppins, sans-serif;
 }
 
 .text{
@@ -81,8 +92,21 @@ input[type=submit]:hover {
   margin-top: 30px;
 }
 
+.text p{
+  margin: 3px 0px 10px 0;
+}
+
 .wrapper{
-  margin: auto;
+  margin: 0 auto;
   width: 1400px;
 
+}
+
+#kaas{
+  height: 400px;
+  width: auto;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+  padding: 5px;
 }
