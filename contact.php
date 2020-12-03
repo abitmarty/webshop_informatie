@@ -3,7 +3,7 @@ $naam = $_POST[name];
 $email = $_POST[email];
 $message = $_POST[mess];
 
-echo $naam . " - " . $email . " - " . $message;
+//echo $naam . " - " . $email . " - " . $message;
 
 ?>
 
@@ -23,7 +23,9 @@ echo $naam . " - " . $email . " - " . $message;
   </ul>
 <div class="wrapper">
   <div class="container">
-
+    <div class="textarea">
+      <?php echo "Beste ". $naam . " ,dank u wel voor het contacteren vaan de oude kazen. Wij zullen uw via " . $email . " contacteren.";  ?>
+    </div>
     </div>
     </div>
 </body>
