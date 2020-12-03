@@ -4,7 +4,7 @@ $email = $_POST[email];
 $message = $_POST[mess];
 
 //echo $naam . " - " . $email . " - " . $message;
-
+mail($email,"NU 10% OP ALLE KAZEN. MEER KAAS IS MEER KORTING!!!! AAAHAHA",$message);
 ?>
 
 <html>
