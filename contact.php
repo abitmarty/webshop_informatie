@@ -11,6 +11,7 @@ mail($email,"NU 10% OP ALLE KAZEN. MEER KAAS IS MEER KORTING!!! AAAHAHA",$messag
 <head>
   <link rel="stylesheet" href="style.css">
   <title>Groep 46 contact</title></head>
+  Hello maarten
 <body>
   <div class="titleTop">M&M&L</div>
   <div class="titleBottom">Groep 46</div>
