@@ -27,6 +27,19 @@
         </ul>
       </div>
     </nav>
+    <div class="big_blocks">
+      <p class="centered_word">Width:</p>
+    </div>
   </div>
 </body>
 </html>
+
+<script>
+  function setScreenWidth() {
+    var centered_words = document.getElementsByClassName("centered_word");
+    centered_words[0].innerHTML = "Width:" + $(document).width();
+  }
+  window.onload = setScreenWidth;
+  window.onresize = setScreenWidth;
+
+</script>
