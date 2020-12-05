@@ -132,3 +132,15 @@ input[type=submit]:hover {
   margin-right: auto;
   padding: 5px;
 }
+
+@media only screen
+and (min-width : 0px)
+and (max-width : 767px)
+{
+/* Styles */
+
+.main-content{
+  margin-top: 305px;
+}
+
+}
