@@ -26,6 +26,7 @@
   border: 2px #222 solid;
   position: relative;
   z-index: 998;
+   cursor: pointer;
 }
 
 .disco-container:hover{
@@ -36,7 +37,6 @@
   margin: 0 auto;
  text-align: center;
  vertical-align: middle;
- cursor: pointer;
  position: relative;
  z-index: 999;
  line-height: 50px;
