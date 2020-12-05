@@ -27,19 +27,59 @@
         </ul>
       </div>
     </nav>
-    <div class="big_blocks">
+    <div class="big_blocks" id="appendDivhere">
       <p class="centered_word">Width:</p>
+      <p class="its_discotime">Discotime</p>
     </div>
   </div>
 </body>
 </html>
 
 <script>
+var clicked = false;
   function setScreenWidth() {
     var centered_words = document.getElementsByClassName("centered_word");
     centered_words[0].innerHTML = "Width:" + $(document).width();
   }
   window.onload = setScreenWidth;
   window.onresize = setScreenWidth;
+
+  function discotime(){
+      var size = ((Math.random()*30) + 15).toFixed();
+      var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
+      var x = (Math.random() * ($(document).width() - size)).toFixed();
+      var y = (Math.random() * ($(document).height() - size)).toFixed();
+      var z = ((Math.random()*900) + 15).toFixed();
+      var div = document.createElement("div");
+      div.style.width = size + "px";
+      div.style.height = size + "px";
+      div.style.background = color;
+      div.style.borderRadius = "100px";
+      div.style.position = "absolute";
+      div.style.left = x + "px";
+      div.style.top = y + "px";
+      div.style.zIndex = z;
+      document.getElementById("appendDivhere").appendChild(div);
+      discobt[0].style.color = color;
+  }
+
+  function interValDis(){
+    clicked = !clicked;
+    console.log(clicked);
+
+    if(clicked){
+      console.log("starting");
+      discobt[0].innerHTML = "Click to stop the madness";
+      myvar = setInterval(discotime, 20);
+    }
+    else{
+      console.log("stopping");
+      discobt[0].innerHTML = "Discotime";
+      clearInterval(myvar);
+    }
+  }
+
+  var discobt = document.getElementsByClassName("its_discotime");
+  discobt[0].onclick = interValDis;
 
 </script>
