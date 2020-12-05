@@ -41,8 +41,9 @@
 var clicked = false;
   function setScreenWidth() {
     var centered_words = document.getElementsByClassName("centered_word");
-    centered_words[0].innerHTML = "Width:" + $(document).width();
+    centered_words[0].innerHTML = "Width:" + $(document).width() + $(document).height();
   }
+
   window.onload = setScreenWidth;
   window.onresize = setScreenWidth;
 
