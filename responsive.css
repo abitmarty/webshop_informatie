@@ -15,6 +15,23 @@
    position: relative;
    z-index: 999;
 }
+
+.disco-container{
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  background: #222;
+  border-radius: 5px;
+  transition: background ease 0.2s;
+  border: 2px #222 solid;
+  position: relative;
+  z-index: 998;
+}
+
+.disco-container:hover{
+  background: none;
+}
+
 .its_discotime{
   margin: 0 auto;
  text-align: center;
@@ -22,10 +39,14 @@
  cursor: pointer;
  position: relative;
  z-index: 999;
+ line-height: 50px;
+ transition: color ease 0.2s;
+ color: white;
+
 }
 
 .its_discotime:hover{
-  color: white;
+  color: #222;
 }
 
 .massiveBod{
