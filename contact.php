@@ -17,6 +17,7 @@ mail($email,"NU 10% OP ALLE KAZEN. MEER KAAS IS MEER KORTING!!! AAAHAHA",$messag
     <link rel="stylesheet" href="style.css">
     <title>Groep 46 hoofdpagina</title>
     <link rel="shortcut icon" src="/assets/cheesefavicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <div class="massiveBod">
