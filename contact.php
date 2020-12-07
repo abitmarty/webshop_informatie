@@ -6,10 +6,26 @@ $message = $_POST[mess];
 
 $finalMessage = "Brie brie C \n\n" . $message;
 
-mail($email,"Wat is de favoriete zender van een kaas?", $finalMessage);
+//mail($email,"Wat is de favoriete zender van een kaas?", $finalMessage);
+function exsists(){
+  if (file_exists($naam . ".txt")) {
+    $naam = $naam . "kaas";
+    echo "<script>console.log('Exists' );</script>";
+    exsists();
+  }
+}
 
-$file = fopen($naam . ".txt","w");
-fwrite($file, "Neem contact op mett: " . $naam . " op Email: " . $email);
+exsists();
+/*if (file_exists($naam . ".txt")) {
+  $fileName = $naam . "kaas" . ".txt";
+}else{
+  $fileName = $naam . ".txt";
+}*/
+
+$fileName = $naam . ".txt";
+
+$file = fopen($fileName, "w");
+fwrite($file, "Neem contact op met: " . $naam . " op Email: " . $email);
 fclose($file);
 
 ?>
