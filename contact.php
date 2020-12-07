@@ -4,14 +4,13 @@ $naam = $_POST[name];
 $email = $_POST[email];
 $message = $_POST[mess];
 
-mail($email,"Wat is een kaas z'n favorite tv-programma?","BrieBrieC. Jouw bericht naar ons: " + $message " is ontvangen!");
-try{
+$finalMessage = "Brie brie C \n\n" . $message;
+
+mail($email,"Wat is de favoriete zender van een kaas?", $finalMessage);
+
 $file = fopen($naam . ".txt","w");
 fwrite($file, "Neem contact op mett: " . $naam . " op Email: " . $email);
 fclose($file);
-} catch(Exeptio $ex){
-  echo $ex;
-}
 
 ?>
 
