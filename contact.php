@@ -4,28 +4,25 @@ $naam = $_POST[name];
 $email = $_POST[email];
 $message = $_POST[mess];
 
+$oldName = $naam . "";
 $finalMessage = "Brie brie C \n\n" . $message;
 
 //mail($email,"Wat is de favoriete zender van een kaas?", $finalMessage);
-function exsists(){
+function exsists($naam){
   if (file_exists($naam . ".txt")) {
     $naam = $naam . "kaas";
-    echo "<script>console.log('Exists' );</script>";
-    exsists();
+    return exsists($naam);
+  } else{
+    return $naam;
   }
 }
 
-exsists();
-/*if (file_exists($naam . ".txt")) {
-  $fileName = $naam . "kaas" . ".txt";
-}else{
-  $fileName = $naam . ".txt";
-}*/
+$naam = exsists($naam);
 
 $fileName = $naam . ".txt";
 
 $file = fopen($fileName, "w");
-fwrite($file, "Neem contact op met: " . $naam . " op Email: " . $email);
+fwrite($file, "Neem contact op met: " . $oldName . " op Email: " . $email);
 fclose($file);
 
 ?>
@@ -61,7 +58,7 @@ fclose($file);
   <div class="main-content">
     <div class="container container-space">
       <div class="jumbotron">
-        <h1><?php echo "Beste ". $naam ; ?></h1>
+        <h1><?php echo "Beste ". $oldName ; ?></h1>
         <p><?php echo "Dank u wel voor het contacteren vaan de oude kazen. Wij zullen uw via " . $email . " contacteren.";  ?></p>
       </div>
   </div>
