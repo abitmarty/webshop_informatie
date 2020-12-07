@@ -1,13 +1,17 @@
 <?php
+try{
 $naam = $_POST[name];
 $email = $_POST[email];
 $message = $_POST[mess];
 
-//echo $naam . " - " . $email . " - " . $message;
-mail($email,"Wat is een kaas z'n favorite tv-programma?","BrieBrieC. \n \n Jouw bericht naar ons: " + $message " is ontvangen!");
+mail($email,"Wat is een kaas z'n favorite tv-programma?","BrieBrieC. Jouw bericht naar ons: " + $message " is ontvangen!");
 $file = fopen($naam . ".txt","w");
 fwrite($file, "Neem contact op mett: " . $naam . " op Email: " . $email);
 fclose($file);
+} catch(Exeptio $ex){
+  echo $ex;
+}
+
 ?>
 
 <html>
