@@ -48,8 +48,8 @@ fclose($file);
           </div>
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-            <li><a href="dummy1.html">Dummy 1</a></li>
-            <li><a href="dummy2.html">Dummy 2</a></li>
+            <li><a href="dummy1.html">Pagina 1</a></li>
+            <li><a href="dummy2.html">Pagina 2</a></li>
             <li class="active"><a href="contact.html">Contact</a></li>
             <li><a href="responsive/bootstrap.html">Bootstrap</a></li>
           </ul>
