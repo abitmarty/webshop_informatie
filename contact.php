@@ -7,7 +7,7 @@ $message = $_POST[mess];
 mail($email,"Wat is een kaas z'n favorite tv-programma?","BrieBrieC. \n \n Jouw bericht naar ons: " + $message " is ontvangen!");
 //$fname = str_replace(' ','_', $name);
 $file = fopen($naam . '.txt',"w");
-fwrite($file, "Neem contact op met: " . $naam . " op Email: " . $email);
+fwrite($file, "Neem contact op mett: " . $naam . " op Email: " . $email);
 fclose($file);
 ?>
 
