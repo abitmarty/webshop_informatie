@@ -27,7 +27,7 @@ fwrite($file, "Neem contact op met: " . $oldName . " op Email: " . $email);
 fclose($file);
 
 ?>
-
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
