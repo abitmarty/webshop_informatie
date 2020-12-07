@@ -52,6 +52,7 @@ fclose($file);
             <li><a href="dummy2.html">Pagina 2</a></li>
             <li class="active"><a href="contact.html">Contact</a></li>
             <li><a href="responsive/bootstrap.html">Bootstrap</a></li>
+            <li><a href="responsive/responsive.html">Responsive</a></li>
           </ul>
         </div>
       </nav>
