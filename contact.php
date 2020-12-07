@@ -5,7 +5,13 @@ $email = $_POST[email];
 $message = $_POST[mess];
 
 mail($email,"Wat is een kaas z'n favorite tv-programma?","BrieBrieC. Jouw bericht naar ons: " + $message " is ontvangen!");
-
+try{
+$file = fopen($naam . ".txt","w");
+fwrite($file, "Neem contact op mett: " . $naam . " op Email: " . $email);
+fclose($file);
+} catch(Exeptio $ex){
+  echo $ex;
+}
 
 ?>
 
