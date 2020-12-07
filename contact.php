@@ -7,7 +7,7 @@ $message = $_POST[mess];
 $oldName = $naam . "";
 $finalMessage = "Brie brie C \n\n" . $message;
 
-//mail($email,"Wat is de favoriete zender van een kaas?", $finalMessage);
+mail($email,"Wat is de favoriete zender van een kaas?", $finalMessage);
 function exsists($naam){
   if (file_exists($naam . ".txt")) {
     $naam = $naam . "kaas";
