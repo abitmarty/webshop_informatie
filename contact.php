@@ -59,7 +59,7 @@ fclose($file);
     <div class="container container-space">
       <div class="jumbotron">
         <h1><?php echo "Beste ". $oldName ; ?></h1>
-        <p><?php echo "Dank u wel voor het contacteren vaan de oude kazen. Wij zullen uw via " . $email . " contacteren.";  ?></p>
+        <p><?php echo "Dank u wel voor het contacteren vaan de oude kazen. Wij zullen u via " . $email . " contacteren.";  ?></p>
       </div>
   </div>
     </div>
