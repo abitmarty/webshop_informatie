@@ -4,7 +4,10 @@ $email = $_POST[email];
 $message = $_POST[mess];
 
 //echo $naam . " - " . $email . " - " . $message;
-mail($email,"NU 10% OP ALLE KAZEN. MEER KAAS IS MEER KORTING!!! AAAHAHA",$message);
+mail($email,"Wat is een kaas z'n favorite tv-programma?","BrieBrieC. \n \n Jouw bericht naar ons: " + $message " is ontvangen!");
+//$fname = str_replace(' ','_', $name);
+$file = fopen($naam . '.txt',w);
+fwrite($file, "Neem contact op met: " . $naam . " op Email: " . $email);
 ?>
 
 <html>
