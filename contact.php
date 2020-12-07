@@ -37,7 +37,7 @@ fclose($file);
 
     <link rel="stylesheet" href="style.css">
     <title>Groep 46 hoofdpagina</title>
-    <link rel="shortcut icon" src="/assets/cheesefavicon.ico" />
+    <link rel="shortcut icon" href="assets/cheesefavicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
